@@ -1,6 +1,7 @@
 
 import os
 import time
+import glob
 import random
 import logging
 import pickle
@@ -27,6 +28,17 @@ logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 class InstagramBot:
+    def __int__(self);
+    self.download_artifacts()def init(self):
+    self.download_artifacts()
+    # ... rest of existing code
+
+def download_artifacts(self):
+    # Find latest artifact
+    artifacts = glob.glob('user-data-*/welcomed_users.pkl')
+    if artifacts:
+        latest = max(artifacts, key=os.path.getctime)
+        os.rename(latest, USER_STORAGE_FILE)
     def __init__(self):
         self.client = Client()
         self.welcomed_users = self.load_users()
