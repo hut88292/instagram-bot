@@ -1,0 +1,4 @@
+.env
+welcomed_users.pkl
+__pycache__/
+*.session
