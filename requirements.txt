@@ -1,1 +1,4 @@
-
+instagrapi
+transformers
+torch
+python-dotenv
