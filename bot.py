@@ -28,6 +28,11 @@ logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 class InstagramBot:
+
+    def handle_challenge(self):
+    # For SMS verification
+    challenge_code = input("Enter SMS code: ")
+    self.client.challenge_resolve(challenge_code)
     def __int__(self);
     self.download_artifacts()def init(self):
     self.download_artifacts()
